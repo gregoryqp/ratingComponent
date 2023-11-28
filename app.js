@@ -55,8 +55,6 @@ let submitButton = () => {
 
 przycisk.addEventListener("click", submitButton);
 rat1.addEventListener("click", zmianaKoloru1);
-rat1.addEventListener("touchstart", zmianaKoloru1);
-
 rat2.addEventListener("click", zmianaKoloru2);
 rat3.addEventListener("click", zmianaKoloru3);
 rat4.addEventListener("click", zmianaKoloru4);
