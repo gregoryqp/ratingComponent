@@ -50,8 +50,13 @@ let submitButton = () => {
   activateComponent.classList.remove("containerWithThanks");
   activateComponent.classList.add("component");
 
-  selectedRate.innerHTML = ocena;
+  if (ocena == undefined) {
+    selectedRate.innerHTML = 5;
+  } else {
+    selectedRate.innerHTML = ocena;
+  }
 };
+
 
 przycisk.addEventListener("click", submitButton);
 rat1.addEventListener("click", zmianaKoloru1);
